@@ -1,2 +1,5 @@
-void bubble_sort_asc(int a[], int array_size);
-void bubble_sort_desc(int a[], int array_size);
+int cmpfunc_asc (const void * a, const void * b);
+int cmpfunc_desc (const void * a, const void * b);
+
+
+

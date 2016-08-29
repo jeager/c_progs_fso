@@ -19,11 +19,11 @@ int main(int argc, char *argv[]){
 	print_array(array, size);
 
 	if((strcmp (argv[1],"-d") == 0) || argc == 2){
-		bubble_sort_asc(array, size);
+		qsort(array, size, sizeof(int), cmpfunc_asc);
 		printf("Array ordered ascendant: ");
 	}
 	else if(strcmp (argv[1],"-r") == 0){
-		bubble_sort_desc(array, size);
+		qsort(array, size, sizeof(int), cmpfunc_desc);
 		printf("Array ordered descendant: ");
 	}
 	
