@@ -4,8 +4,15 @@
 #include "../lib/sort.h"
 
 int main(int argc, char *argv[]){
-	if(argc > 3)
-		printf("Wrong number of arguments");
+	if(argc > 3 || argc == 1){
+		printf("Wrong number of arguments, use -h for help.\n");
+		return 0;
+	}
+	
+	if(strcmp (argv[1],"-h") == 0){
+		print_help_message();
+		return 0;
+	}
 
 	int size;
 	if(argc == 2)
@@ -13,6 +20,7 @@ int main(int argc, char *argv[]){
 	else
 		size = atoi(argv[2]);
 
+	printf("Please insert %d numbers\n", size);
 	int *array = create_numbers_array(size);
 
 	printf("Array inserted: ");

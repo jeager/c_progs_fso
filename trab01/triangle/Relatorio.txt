@@ -1,0 +1,24 @@
+A aplicação foi executada utilizando o sistema operacional Elementary O.S, sistema baseado em Linux (Ubuntu)
+
+== UTILIZAÇÃO ==
+Para utilizar a aplicação, primeiramente deve-se rodar o comando
+
+$make
+
+Para utilizar o caso de teste disponível, execute:
+
+$./triangle < test.txt
+
+== DESCRIÇÃO ==
+Ao iniciar a aplicação você deverá ver as seguintes mensages:
+
+Please, input 3 cartesian points to plot your triangle.
+Please, insert the first coordinate (X Y):
+
+Serão pedidos para inserir 3 pontos.
+
+Após inseridos, serão feitos:
+	- Validação do triangulo
+	- Área
+	- Perímetro
+

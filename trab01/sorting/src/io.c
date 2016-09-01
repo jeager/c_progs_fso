@@ -34,3 +34,11 @@ void print_array(int *array, int size){
 			printf("%d,",array[count]);
 	}
 }
+
+void print_help_message(){
+	printf("The sorting application works with:\n");
+	printf("-d crescent order\n");
+	printf("-r decrescent order\n");
+	printf("-h this helper\n");
+	printf("followed by the number of inputs. If no option is provided, the crescent order is used.\n");
+}

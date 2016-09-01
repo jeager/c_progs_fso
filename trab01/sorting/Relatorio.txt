@@ -1,0 +1,23 @@
+A aplicação foi executada utilizando o sistema operacional Elementary O.S, sistema baseado em Linux (Ubuntu)
+
+== UTILIZAÇÃO ==
+Para utilizar a aplicação, primeiramente deve-se rodar o comando
+
+$make
+
+Para utilizar o caso de teste disponível, execute:
+
+$./triangle -option 10 < test.txt
+
+Onde option pode ser -r ou -d.
+
+Para verificar utilização da aplicação utilize a option -h.
+
+Pode-se utilizar um número qualquer de termos, basta utilizar ./triangle -option X, onde X é o número de termos.
+== DESCRIÇÃO ==
+Ao iniciar a aplicação você deverá ver as seguintes mensages:
+
+Please insert 10 numbers
+Insira o número 1: 
+
+Após inseridos os 10 números, eles serão ordenados de acordo com a opção escolhida
