@@ -1,0 +1,47 @@
+A aplicação foi executada utilizando o sistema operacional Elementary O.S, sistema baseado em Linux (Ubuntu)
+
+== UTILIZAÇÃO ==
+Para utilizar a aplicação, primeiramente deve-se rodar o comando
+
+Para o caso a)
+
+gcc q03a.c -o q03a
+
+caso b)
+
+gcc q03b.c -o q03b -lpthread
+
+caso c)
+
+gcc q03c.c -o q03c -lpthread
+
+
+Para utilizar o caso de teste disponível, execute:
+
+$./q03x < test.txt
+
+Através da comparação de tempo gasto, o uso de Threads em um pequeno número de inteiros é inviável. 
+
+Nos casos feitos, a primeira implementação é a mais rápida, seguida da terceira e então a segunda.
+
+== RESULTADO A ==
+T1 124ms
+T2 120ms
+T3 122ms
+T4 122ms
+T5 128ms
+Tm = 123ms
+== RESULTADO B ==
+T1 1023ms
+T2 1738ms
+T3 1075ms
+T4 1355ms
+T5 1629ms
+Tm = 1364ms
+== RESULTADO C ==
+T1 678ms 
+T2 564ms
+T3 587ms
+T4 699ms
+T5 725ms
+Tm = 650ms

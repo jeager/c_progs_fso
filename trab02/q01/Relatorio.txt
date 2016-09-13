@@ -1,0 +1,9 @@
+A aplicação foi executada utilizando o sistema operacional Elementary O.S, sistema baseado em Linux (Ubuntu)
+
+== UTILIZAÇÃO ==
+Para utilizar a aplicação, primeiramente deve-se rodar o comando
+
+gcc alarm.c -o alarm
+
+e então executar com 
+./alarm

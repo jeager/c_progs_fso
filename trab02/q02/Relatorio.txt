@@ -1,0 +1,97 @@
+A aplicação foi executada utilizando o sistema operacional Elementary O.S, sistema baseado em Linux (Ubuntu)
+
+== UTILIZAÇÃO ==
+Para utilizar a aplicação, primeiramente deve-se rodar o comando
+
+gcc calc_max_seq.c -o calc_max_seq -lpthread
+
+ou
+
+gcc calc_max_seq_no_t.c -o calc_max_seq_no_t
+
+Para utilizar o caso de teste disponível, execute:
+
+$./calc_max_seq 8 4 2 9 3 8 10 11 18
+
+ou 
+
+$./calc_max_seq_no_t 8 4 2 9 3 8 10 11 18
+
+Através da comparação de tempo gasto, o uso de Threads em um pequeno número de inteiros é inviável.
+
+== RESULTADO COM THREAD ==
+
+Number of input values: 8
+Input values: 4 2 9 3 8 10 11 18 
+After Initialization: 1 1 1 1 1 1 1 1 
+Thread (0,1) compares x[0] = 4 and x[1] = 2
+Thread (0,5) compares x[0] = 4 and x[5] = 10
+Thread (0,2) compares x[0] = 4 and x[2] = 9
+Thread (0,7) compares x[0] = 4 and x[7] = 18
+Thread (1,3) compares x[1] = 2 and x[3] = 3
+Thread (0,6) compares x[0] = 4 and x[6] = 11
+Thread (1,6) compares x[1] = 2 and x[6] = 11
+Thread (0,4) compares x[0] = 4 and x[4] = 8
+Thread (2,3) compares x[2] = 9 and x[3] = 3
+Thread (0,3) compares x[0] = 4 and x[3] = 3
+Thread (2,5) compares x[2] = 9 and x[5] = 10
+Thread (1,5) compares x[1] = 2 and x[5] = 10
+Thread (2,7) compares x[2] = 9 and x[7] = 18
+Thread (3,4) compares x[3] = 3 and x[4] = 8
+Thread (3,5) compares x[3] = 3 and x[5] = 10
+Thread (1,7) compares x[1] = 2 and x[7] = 18
+Thread (1,4) compares x[1] = 2 and x[4] = 8
+Thread (2,4) compares x[2] = 9 and x[4] = 8
+Thread (4,5) compares x[4] = 8 and x[5] = 10
+Thread (1,2) compares x[1] = 2 and x[2] = 9
+Thread (3,6) compares x[3] = 3 and x[6] = 11
+Thread (3,7) compares x[3] = 3 and x[7] = 18
+Thread (2,6) compares x[2] = 9 and x[6] = 11
+Thread (4,6) compares x[4] = 8 and x[6] = 11
+Thread (5,6) compares x[5] = 10 and x[6] = 11
+Thread (4,7) compares x[4] = 8 and x[7] = 18
+Thread (5,7) compares x[5] = 10 and x[7] = 18
+Thread (6,7) compares x[6] = 11 and x[7] = 18
+After Comparsion: 0 0 0 0 0 0 0 1 
+Maximum: 18
+Position: 8
+Took 1955ms
+
+== RESULTADO SEM THREAD ==
+
+Number of input values: 8
+Input values: 4 2 9 3 8 10 11 18 
+After Initialization: 1 1 1 1 1 1 1 1 
+Compares x[0] = 4 and x[1] = 2
+Compares x[0] = 4 and x[2] = 9
+Compares x[0] = 4 and x[3] = 3
+Compares x[0] = 4 and x[4] = 8
+Compares x[0] = 4 and x[5] = 10
+Compares x[0] = 4 and x[6] = 11
+Compares x[0] = 4 and x[7] = 18
+Compares x[1] = 2 and x[2] = 9
+Compares x[1] = 2 and x[3] = 3
+Compares x[1] = 2 and x[4] = 8
+Compares x[1] = 2 and x[5] = 10
+Compares x[1] = 2 and x[6] = 11
+Compares x[1] = 2 and x[7] = 18
+Compares x[2] = 9 and x[3] = 3
+Compares x[2] = 9 and x[4] = 8
+Compares x[2] = 9 and x[5] = 10
+Compares x[2] = 9 and x[6] = 11
+Compares x[2] = 9 and x[7] = 18
+Compares x[3] = 3 and x[4] = 8
+Compares x[3] = 3 and x[5] = 10
+Compares x[3] = 3 and x[6] = 11
+Compares x[3] = 3 and x[7] = 18
+Compares x[4] = 8 and x[5] = 10
+Compares x[4] = 8 and x[6] = 11
+Compares x[4] = 8 and x[7] = 18
+Compares x[5] = 10 and x[6] = 11
+Compares x[5] = 10 and x[7] = 18
+Compares x[6] = 11 and x[7] = 18
+After Comparsion: 0 0 0 0 0 0 0 1 
+Maximum: 18
+Position: 8
+Took 79ms
+
