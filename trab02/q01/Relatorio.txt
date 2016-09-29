@@ -7,3 +7,5 @@ gcc alarm.c -o alarm
 
 e então executar com 
 ./alarm
+
+O sistema mostra um processo pai fazendo o fork e em seguida aguardando a filha responder. A filha por sua vez dorme por 5 segundos e então manda um sinal para o pai que se encerra.

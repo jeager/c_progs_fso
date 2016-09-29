@@ -1,0 +1,31 @@
+A aplicação foi executada utilizando o sistema operacional Elementary O.S, sistema baseado em Linux (Ubuntu)
+
+== UTILIZAÇÃO ==
+Para utilizar o sistema deve-se primeiro rodar o comando:
+
+$ make
+
+para gerar as 3 questões
+
+ou
+
+$ make q01
+$ make q02
+$ make q03
+
+para gerar elas individualmente.
+
+
+Para rodar as questões, vá até a pasta /bin dentro da questão desejada (q01, q02 ou q03), e utilize
+
+./q0x
+
+sendo x a questão.
+
+Questão 1)
+
+Não houve necessidade de mudar nenhum pedaço do código, houve necessidade apenas de mudar a forma de compilar. No primeiro caso era gerado uma biblioteca estática(.a), e no segundo caso foi gerado uma biblioteca dinâmica (.so).
+
+Questão 2)
+
+Quando se trata de pequenas aplicações, uma biblioteca estática pode resolver a demanda sem problemas, mas quando se parte para grandes aplicações, o uso de biblioteca compartilhada (dinâmica) auxilia pelo fato de diminuir a quantidade de memória necessária para a dada aplicação. Isso acontece por que vários programas podem acessar a biblioteca compartilhada, tendo apenas uma biblioteca alocada na memória.

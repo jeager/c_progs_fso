@@ -22,6 +22,8 @@ $./q03x < test.txt
 
 Através da comparação de tempo gasto, o uso de Threads em um pequeno número de inteiros é inviável. 
 
+Utiliza-se n*(n-1)/2 threads pois esse é o número de comparações necessárias para se comparar todos os casos possíveis.
+
 Nos casos feitos, a primeira implementação é a mais rápida, seguida da terceira e então a segunda.
 
 == RESULTADO A ==
